@@ -45,15 +45,22 @@ SUM, AVERAGE, GROUPBY
 - For running query
 - for data manipulation
 - Data Cleaning and Preparation
-  ## Visual Analysis and Inference
-
-![image](https://github.com/user-attachments/assets/fbb5f1fd-d694-4106-bdba-fb4bfe1890c0)
-
-![image](https://github.com/user-attachments/assets/e8ddaeae-7a85-4aac-be76-d016259d1336)
+  ## Visual Analysis and Inference	
 	
-![image](https://github.com/user-attachments/assets/a90aa786-dfb7-4901-b273-a74de326b829)
+![image](https://github.com/user-attachments/assets/50113805-7402-49c7-9556-e8f1e77ddcd7)
+	
+![image](https://github.com/user-attachments/assets/45893bbf-d05f-41b5-b827-639b2b42a676)
 
-![image](https://github.com/user-attachments/assets/88cc3709-cca1-42b3-a9d5-1c618e32b0bc)
+![image](https://github.com/user-attachments/assets/4ce3e2d9-ef21-4489-9998-a88a65aad66f)
+	
+![image](https://github.com/user-attachments/assets/77af6086-4263-437b-b0c5-9de5b39c41bb)
+	
+![image](https://github.com/user-attachments/assets/d2adbe1b-0e36-4340-8171-b0a818775115)
+
+![image](https://github.com/user-attachments/assets/e87008c9-547d-40eb-9876-cb6f4a48a13b)
+
+
+
 ## Inference
 
            v
