@@ -63,4 +63,64 @@ SUM, AVERAGE, GROUPBY
 
 ## Inference
 
-           v
+- QUERY TO RETRIEVE THE TOTAL SALE FOR EACH PRODUCT CATEGORY
+ ```SQL
+SELECT product, SUM(Quantity * UnitPrice) AS TotalSales
+FROM [dbo].[SalesData$]
+GROUP BY [Product]
+  ```
+- QUERY TO FIND THE NUMBER OF SALES TRANSACTION IN EACH REGION
+```SQL
+SELECT Region, COUNT(OrderID) AS NumberOfTransactions
+FROM SalesData$
+GROUP BY Region
+```
+- QUERY TO FIND THE HIGHEST SELLING PRODUCT BY TOTAL SALES VALUE
+ ```SQL
+SELECT Top 1 Product, SUM(Quantity * UnitPrice) AS TotalSales
+FROM SalesData$
+GROUP BY Product
+ORDER BY TotalSales DESC
+```
+- QUERY
+
+``` SQL
+SELECT Product, SUM(Quantity * UnitPrice) AS TotalRevenue
+FROM SalesData$
+GROUP BY Product
+```
+- QUERY TO CALCULATE MONTHLY SALES TOTAL FOR THE CURRENT YEAR
+``` SQL
+SELECT FORMAT(OrderDate, 'yyyy-MM') AS Month, SUM(Quantity * UnitPrice) AS TotalSales
+FROM SalesData$
+WHERE OrderDate >= DATEFROMPARTS(YEAR(GETDATE()), 1, 1) -- Start of the current year
+  AND OrderDate < DATEADD(YEAR, 1, DATEFROMPARTS(YEAR(GETDATE()), 1, 1)) -- Start of the next year
+GROUP BY FORMAT(OrderDate, 'yyyy-MM')
+ORDER BY Month
+```
+- QUERY TO FIND THE TOP 5 CUSTOMWERS BY TOTAL PURCHASE AMOUNT
+
+``` SQL
+SELECT TOP 5 [Customer Id], SUM(Quantity * UnitPrice) AS TotalPurchase
+FROM SalesData$
+GROUP BY [Customer Id]
+ORDER BY TotalPurchase DESC
+```
+- QUERY TO CALCULATE % OF TOTAL SALES CONTRIBUTED BY EACH REGION
+``` SQL
+SELECT Region, 
+       SUM(Quantity * UnitPrice) AS TotalSales,
+       (SUM(Quantity * UnitPrice) / (SELECT SUM(Quantity * UnitPrice) FROM SalesData$) * 100) AS PercentageContribution
+FROM SalesData$
+GROUP BY Region
+```
+- QUERY TO IDENTIFY PRODUCTS WITH NO SALES IN THE LAST QUARTERS
+``` SQL
+SELECT DISTINCT Product
+FROM SalesData$
+WHERE Product NOT IN (
+    SELECT Product
+    FROM SalesData$
+    WHERE OrderDate >= DATEADD(MONTH, -3, GETDATE())
+)
+```
