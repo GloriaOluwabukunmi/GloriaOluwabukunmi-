@@ -45,7 +45,9 @@ SUM, AVERAGE, GROUPBY
 - For running query
 - for data manipulation
 - Data Cleaning and Preparation
-  ## Visual Analysis and Inference	
+
+ 
+  ## VISUAL ANALYSIS	
 	
 ![image](https://github.com/user-attachments/assets/50113805-7402-49c7-9556-e8f1e77ddcd7)
 	
@@ -60,9 +62,19 @@ SUM, AVERAGE, GROUPBY
 ![image](https://github.com/user-attachments/assets/e87008c9-547d-40eb-9876-cb6f4a48a13b)
 
 
+### AVERAGE SALES FOR GLOVES, HAT. SOCKS, SHIRT, JACKET AND SHOES
+|Average sales for gloves|Average sales for hat|Average sales for socks|Average sales for shirt|Average sales for jacket|Average sales for shoes|
+|-----------|---------|---------|---------|--------|----------|
+|200.06|158.81|121.82|326.56|139.93|308.69|
 
-## Inference
 
+### TOTAL REVENUE FOR NORTH, EAST, WEST AND SOUTH
+|total revenue by North|total revenue by East|total revenue by West|total revenue by South|
+|-----------|---------|---------|---------|
+|387000|485925|300345|927820|
+
+
+## SQL QUERIES
 - QUERY TO RETRIEVE THE TOTAL SALE FOR EACH PRODUCT CATEGORY
  ```SQL
 SELECT product, SUM(Quantity * UnitPrice) AS TotalSales
