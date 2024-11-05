@@ -128,11 +128,9 @@ GROUP BY Region
 ```
 - QUERY TO IDENTIFY PRODUCTS WITH NO SALES IN THE LAST QUARTERS
 ``` SQL
-SELECT DISTINCT Product
-FROM SalesData$
-WHERE Product NOT IN (
-    SELECT Product
-    FROM SalesData$
-    WHERE OrderDate >= DATEADD(MONTH, -3, GETDATE())
-)
+SELECT Product, SUM(Quantity) As Saless
+FROM [dbo].[SalesData$]
+WHERE MONTH(Orderdate) BETWEEN 10 AND 12  ---Months 10,11 and 12 (october to december)
+GROUP BY Product
+Having SUM(Quantity)=0
 ```
