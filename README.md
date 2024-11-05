@@ -5,23 +5,23 @@
 
 [Data Source](#data-source)
 
-[Data Collected](data-collected)
+[Data Collected](#data-collected)
 
-[Project Objectives](project-objectives)
+[Project Objectives](#project-objectives)
 
-[key metrics](key-mertics)
+[key metrics](#key-mertics)
 
-[FUNCTIONS USED](functions-used)
+[FUNCTIONS USED](#functions-used)
 
 [Tools and Method](#tools-and-method)
 
-[Tools Used](tools-used)
+[Tools Used](#tools-used)
 
-[DATA VISUALIZATION WITH PIVOT TABLE](data-visualization-with-pivot-table)
+[DATA VISUALIZATION WITH PIVOT TABLE](#data-visualization-with-pivot-table)
 
-[SQL QUERIES FOR SALES DATA](sql-queries-for-sales-data)
+[SQL QUERIES FOR SALES DATA](#sql-queries-for-sales-data)
 
-[DATA VISUALIZATION WITH POWERBI DASHBOARD](data-visualization-with-powerbi-dashboard)
+[DATA VISUALIZATION WITH POWERBI DASHBOARD](#data-visualization-with-powerbi-dashboard)
 
 ## Project Overview
 This project analyzes the sales performance of a retail store, exploring sales data to uncover key insights such as top-selling products, regional performance, and monthly sales trends. The goal is to produce an interactive Power BI dashboard that highlights these findings. 
