@@ -1,10 +1,31 @@
 # PROJECT 1
-# PROJECT TItle: : Sales Performance Analysis for a Retail Store 
+## PROJECT TItle: Sales Performance Analysis for a Retail Store 
 
+[Project Overview](#project-overview)
+
+[Data Source](#data-source)
+
+[Data Collected](data-collected)
+
+[Project Objectives](project-objectives)
+
+[key metrics](key-mertics)
+
+[FUNCTIONS USED](functions-used)
+
+[Tools and Method](#tools-and-method)
+
+[Tools Used](tools-used)
+
+[DATA VISUALIZATION WITH PIVOT TABLE](data-visualization-with-pivot-table)
+
+[SQL QUERIES FOR SALES DATA](sql-queries-for-sales-data)
+
+[DATA VISUALIZATION WITH POWERBI DASHBOARD](data-visualization-with-powerbi-dashboard)
 
 ## Project Overview
 This project analyzes the sales performance of a retail store, exploring sales data to uncover key insights such as top-selling products, regional performance, and monthly sales trends. The goal is to produce an interactive Power BI dashboard that highlights these findings. 
-## Data Sources
+## Data Source
 The primary source of data was sent by the company
 ## Data Collected
 ### The dataset includes the following key column;
@@ -39,14 +60,19 @@ The primary source of data was sent by the company
   Percentage of total sales: This gives insight into the percentage of total sales in each region
 ## FUNCTIONS USED
 SUM, AVERAGE, GROUPBY
-## Tools and Method Used
+## Tools and Method
 - Data Analysis: The data was analysed using Structured Query Langurage ( SQL), utilizing the various functions  to cteate table, summarize and organise the data for easier intrpretation.
 - Data Visualization: table created was exported into The Microsoft excel inorder to create charts for easy visualization to represent the key insights
 ## Tools Used
-- Structured Query Language (SQL)
+ Structured Query Language (SQL)
 - For running query
+Microsoft Excel
 - for data manipulation
 - Data Cleaning and Preparation
+Powerbi
+- for data visualization
+GitHub
+- for portfolio building
 
  
 ### DATA VISUALIZATION WITH PIVOT TABLE
@@ -55,7 +81,9 @@ SUM, AVERAGE, GROUPBY
 	
 ![image](https://github.com/user-attachments/assets/45893bbf-d05f-41b5-b827-639b2b42a676)
 
-![image](https://github.com/user-attachments/assets/4ce3e2d9-ef21-4489-9998-a88a65aad66f)
+
+![image](https://github.com/user-attachments/assets/15252824-85c4-43b6-a93b-6eaf150f4632)
+
 	
 ![image](https://github.com/user-attachments/assets/77af6086-4263-437b-b0c5-9de5b39c41bb)
 	
@@ -76,7 +104,7 @@ SUM, AVERAGE, GROUPBY
 |387000|485925|300345|927820|
 
 
-## SQL QUERIES FOR SALES DATA
+### SQL QUERIES FOR SALES DATA
 - QUERY TO RETRIEVE THE TOTAL SALE FOR EACH PRODUCT CATEGORY
  ```SQL
 SELECT product, SUM(Quantity * UnitPrice) AS TotalSales
@@ -96,7 +124,7 @@ FROM SalesData$
 GROUP BY Product
 ORDER BY TotalSales DESC
 ```
-- QUERY
+- QUERY TO CALCULATE TOTAL REVENUE PER PRODUCT
 
 ``` SQL
 SELECT Product, SUM(Quantity * UnitPrice) AS TotalRevenue
