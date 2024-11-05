@@ -1,5 +1,7 @@
 # PROJECT 1
 # PROJECT TItle: : Sales Performance Analysis for a Retail Store 
+
+
 ## Project Overview
 This project analyzes the sales performance of a retail store, exploring sales data to uncover key insights such as top-selling products, regional performance, and monthly sales trends. The goal is to produce an interactive Power BI dashboard that highlights these findings. 
 ## Data Sources
@@ -47,7 +49,7 @@ SUM, AVERAGE, GROUPBY
 - Data Cleaning and Preparation
 
  
-  ## VISUAL ANALYSIS	
+### DATA VISUALIZATION WITH PIVOT TABLE
 	
 ![image](https://github.com/user-attachments/assets/50113805-7402-49c7-9556-e8f1e77ddcd7)
 	
@@ -74,7 +76,7 @@ SUM, AVERAGE, GROUPBY
 |387000|485925|300345|927820|
 
 
-## SQL QUERIES
+## SQL QUERIES FOR SALES DATA
 - QUERY TO RETRIEVE THE TOTAL SALE FOR EACH PRODUCT CATEGORY
  ```SQL
 SELECT product, SUM(Quantity * UnitPrice) AS TotalSales
@@ -134,3 +136,16 @@ WHERE MONTH(Orderdate) BETWEEN 10 AND 12  ---Months 10,11 and 12 (october to dec
 GROUP BY Product
 Having SUM(Quantity)=0
 ```
+
+
+
+### DATA VISUALIZATION WITH POWERBI DASHBOARD
+![Screenshot 2024-11-05 062742](https://github.com/user-attachments/assets/985e45cf-21fb-407b-a83d-e7aab8a12690)
+
+
+![Screenshot 2024-11-05 062812](https://github.com/user-attachments/assets/b6047ea6-bea6-4520-a980-34bb5cf90f00)
+
+
+![Screenshot 2024-11-05 062848](https://github.com/user-attachments/assets/c5bc376b-b0fc-4937-858e-bd14d7584f2a)
+
+
